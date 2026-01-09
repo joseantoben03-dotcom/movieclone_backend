@@ -26,3 +26,4 @@ app.use("/", watchlistRoutes);
 app.get("/", (req, res) => {
   res.send("Movie backend running");
 });
+module.exports = app;
