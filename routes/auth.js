@@ -19,7 +19,7 @@ router.post("/signup", async (req, res) => {
     }
 
     // 2) Check passwords match
-    if (password !== confirmpassword) {
+    if (password != confirmpassword) {
       return res.status(400).json({ message: "Passwords do not match" });
     }
 
