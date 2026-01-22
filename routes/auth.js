@@ -8,7 +8,7 @@ const nodemailer=require("nodemailer");
 require("dotenv").config();
 
 // POST /signup
-router.post("/register", async (req, res) => {
+router.post("/signup", async (req, res) => {
   try {
     const { name, email, password, confirmpassword } = req.body;
 
