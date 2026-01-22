@@ -4,6 +4,7 @@ const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const nodemailer=require("nodemailer");
 require("dotenv").config();
 
 // POST /signup
